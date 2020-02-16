@@ -1,0 +1,21 @@
+{
+  "name": "postgresql-server",
+  "version": "1.0.0",
+  "description": "Playground for postgres db with node",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "node src/index.js",
+    "dev": "nodemon --watch src src/index.js"
+  },
+  "author": "Jose Bolufer",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "pg": "^7.12.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}
