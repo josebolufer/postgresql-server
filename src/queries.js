@@ -1,13 +1,15 @@
 const Pool = require('pg').Pool
 const pool = new Pool({
-  user: 'pzipdoyo',
-  host: 'rogue.db.elephantsql.com',
-  database: 'pzipdoyo',
-  password: 'W_RSWEOgEiHVurVOswjzjSW5jE_J4oZK',
-  port: 5432
+  user: 'fisscidpyaqocu',
+  host: 'ec2-46-137-177-160.eu-west-1.compute.amazonaws.com',
+  database: 'de2gadfaqi2k7c',
+  password: '971fe7af37c5625f254e92619801b963fa63aafcb5950192a442ac2e077ef50a',
+  port: 5432,
+  ssl: true
 })
 
 const getUsers = (request, response) => {
+  console.log(pool)
   pool.query('SELECT * FROM users ORDER BY id ASC', (error, results) => {
     if (error) {
       throw error
