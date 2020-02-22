@@ -1,7 +1,6 @@
 const Pool = require('pg').Pool
 const connection = require('./connection.js')
 const pool = new Pool(connection)
-console.log(connection)
 
 const getUsers = (request, response) => {
   pool.query('SELECT * FROM users ORDER BY id ASC', (error, results) => {
