@@ -6,7 +6,7 @@
   "scripts": {
     "test": "test",
     "start": "node src/index.js",
-    "dev": "nodemon --watch src src/index.js"
+    "dev": "nodemon --watch src src/index.js --exec babel-node -e js"
   },
   "author": "Jose Bolufer",
   "license": "ISC",
@@ -17,6 +17,9 @@
     "pg": "^7.12.1"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
     "nodemon": "^1.19.4"
   }
 }
