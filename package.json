@@ -7,7 +7,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "start": "node src/index.js",
-    "dev": "nodemon --watch src src/index.js"
+    "dev": "nodemon --watch src src/index.js --exec babel-node -e js"
   },
   "author": "Jose Bolufer",
   "license": "ISC",
@@ -20,6 +20,9 @@
   "devDependencies": {
     "jest": "^25.1.0",
     "nodemon": "^1.19.4",
-    "supertest": "^4.0.2"
+    "supertest": "^4.0.2",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1"
   }
 }
