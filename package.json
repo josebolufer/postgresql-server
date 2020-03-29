@@ -4,7 +4,8 @@
   "description": "Playground for postgres db with node",
   "main": "index.js",
   "scripts": {
-    "test": "test",
+    "test": "jest",
+    "test:watch": "jest --watch",
     "start": "node src/index.js",
     "dev": "nodemon --watch src src/index.js"
   },
@@ -17,6 +18,8 @@
     "pg": "^7.12.1"
   },
   "devDependencies": {
-    "nodemon": "^1.19.4"
+    "jest": "^25.1.0",
+    "nodemon": "^1.19.4",
+    "supertest": "^4.0.2"
   }
 }
